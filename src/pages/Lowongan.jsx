@@ -26,19 +26,16 @@ const Lowongan = () => {
 
     return (
         <>
-      <div className='ml-72 mt-14 mr-96'>
+      <div>
         <table>
           <tr className='bg-gray-50'>
-              <th>ID</th>
-              <th>Nama</th>
-              <th>Nilai</th>
-              <th>Course</th>
-              <th>Index Nilai</th>
+              <th>Judul</th>
+              <th>Kota Perusahaan</th>
+              <th>Nama Perusahaan</th>
           </tr>
           { !jobData !== null && jobData.map((res, index) => {
             return(
-              <tr className='bg-white dark:border-gray-700 dark:bg-gray-800 ' key={index}>
-                  <td className='whitespace-nowrap font-medium text-gray-900 dark:text-white'> {index + 1}</td>
+              <tr key={index}>
                   <td> {res.title}</td>
                   <td> {res.company_city}</td>
                   <td> {res.company_name}</td>
