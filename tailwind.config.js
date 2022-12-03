@@ -16,7 +16,17 @@ module.exports = {
         black: "#222222",
         white: "#FFFFFF",
         gray: "#D9D9D9"
-      }
+      },
+      container: {
+        center: true,
+        padding: {
+          DEFAULT: '1rem',
+          sm: '2rem',
+          lg: '4rem',
+          xl: '5rem',
+          '2xl': '6rem',
+        },
+      },
     },
   },
   plugins: [],

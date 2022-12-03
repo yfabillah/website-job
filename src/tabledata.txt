@@ -1,0 +1,28 @@
+{/* <table className='table-fixed border-spacing-3 border-collapse'>
+            <thead>
+            <tr className='bg-gray-50'>
+            <th>Judul</th>
+            <th>Kota Perusahaan</th>
+            <th>Nama Perusahaan</th>
+            </tr>
+            </thead>
+            {!data !== null && data?.data.map((res, index) => {
+            return (
+                <tbody>
+                    <tr key={index}>
+                        <td> {res.title}</td>
+                        <td> {res.company_city}</td>
+                        <td> {res.company_name}</td>
+                        <td>
+                            <img src={res.company_image_url} alt="" className='flex object-cover h-48 w-96'/>
+                        </td>
+                    </tr>
+                </tbody>
+            )
+            })}
+
+        </table>
+        <br></br>
+        <div>menampilkan {data?.total} dari {data?.total} data</div>
+        <div>data per halaman:  {data?.per_page}</div>
+        <div>halaman ke-{data?.current_page} dari {data?.last_page} halaman</div> */}

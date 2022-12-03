@@ -17,7 +17,7 @@ const Navbar = () => {
                         <div className='hidden md:flex text-black gap-8 font-semibold'>
                             <ul className='hidden md:flex text-black gap-8 font-semibold'>
                                 <li>
-                                    <a href="#" className='mx-6'>Home</a>
+                                    <NavLink to={"/"} className='mx-6'>Home</NavLink>
                                 </li>
                                 <li>
                                     <NavLink to={"/lowongan"} className='mx-6'>Lowongan</NavLink>
@@ -25,9 +25,11 @@ const Navbar = () => {
                             </ul>
                         </div>
                         <div className="hidden md:flex mx-8">
-                            <PrimaryButton>
-                                Login
-                            </PrimaryButton>
+                            <NavLink to={"/login"}>
+                                <PrimaryButton>
+                                    Login
+                                </PrimaryButton>
+                            </NavLink>
                         </div>
                         {/* mobile burger */}
                         <div className='flex items-center mr-10'>
@@ -40,14 +42,18 @@ const Navbar = () => {
                     </div>
                     {/* mobile menu */}
                     <div className={`${isOpen ? 'block' : 'hidden'}`}>
-                        <a href="#" className='mx-6'>Home</a>
-                        <a href="#" className='mx-6'>Lowongan</a>
+                        <li>
+                            <NavLink to={"/"} className='mx-6'>Home</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to={"/lowongan"} className='mx-6'>Lowongan</NavLink>
+                        </li>
                     </div>
                 </nav>
             </div>
         </div>
-    
-  )
+
+    )
 }
 
 export default Navbar
